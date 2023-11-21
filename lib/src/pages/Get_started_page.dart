@@ -11,7 +11,7 @@ class Getstarted extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 60),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
@@ -76,21 +76,33 @@ class Getstarted extends StatelessWidget {
                   },
                   child: Container(
                     alignment: Alignment.center,
-                    height: 50,
-                    width: 200,
-                    padding: EdgeInsets.symmetric(vertical: 10),
+                    height: 70,
+                    width: 300,
+                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 80),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(10),
-                            bottomLeft: Radius.circular(10)),
+                            topRight: Radius.circular(20),
+                            bottomLeft: Radius.circular(20)),
                         color: Colors.deepOrange[400]),
-                    child: Text(
-                      "Get started",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: (20),
-                          color: Colors.white),
-                      textAlign: TextAlign.center,
+                    child: Row(
+                      children: [
+                        Text(
+                          "Get started",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: (20),
+                              color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(
+                          width: 15,
+                        ),
+                        //icon
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                        ),
+                      ],
                     ),
                   ),
                 ),

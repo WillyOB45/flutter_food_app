@@ -12,10 +12,12 @@ class _myGnavState extends State<myGnav> {
   @override
   Widget build(BuildContext context) {
     return GNav(
-      activeColor: Colors.deepOrange[200],
+      activeColor: Colors.white,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      tabBackgroundColor: Colors.deepOrange,
-      tabBorder: ,
+      tabBackgroundColor: Colors.deepOrange.shade300,
+      iconSize: (20),
+      backgroundColor: Colors.grey.shade100,
+      curve: Curves.bounceIn,
       tabs: [
         GButton(
           icon: Icons.home,
@@ -24,6 +26,14 @@ class _myGnavState extends State<myGnav> {
         GButton(
           icon: Icons.shopping_cart,
           text: "Cart",
+        ),
+        GButton(
+          icon: Icons.person,
+          text: "user",
+        ),
+        GButton(
+          icon: Icons.settings,
+          text: "settings",
         ),
       ],
     );
