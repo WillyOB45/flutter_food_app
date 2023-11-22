@@ -72,7 +72,7 @@ class Getstarted extends StatelessWidget {
               Center(
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, "/Home_page");
+                    Navigator.pushReplacementNamed(context, "/Home_page");
                   },
                   child: Container(
                     alignment: Alignment.center,

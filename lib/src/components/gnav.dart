@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
-class myGnav extends StatefulWidget {
-  const myGnav({super.key});
+class myGnavbar extends StatefulWidget {
+  const myGnavbar({super.key});
 
   @override
-  State<myGnav> createState() => _myGnavState();
+  State<myGnavbar> createState() => _myGnavbarState();
 }
 
-class _myGnavState extends State<myGnav> {
+class _myGnavbarState extends State<myGnavbar> {
   @override
   Widget build(BuildContext context) {
     return GNav(
-      activeColor: Colors.white,
+      backgroundColor: Colors.grey.shade300,
+      activeColor: Colors.grey.shade300,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      tabBackgroundColor: Colors.deepOrange.shade300,
-      iconSize: (20),
-      backgroundColor: Colors.grey.shade100,
-      curve: Curves.bounceIn,
+      tabBackgroundColor: Colors.deepOrange,
       tabs: [
         GButton(
           icon: Icons.home,
@@ -33,7 +31,7 @@ class _myGnavState extends State<myGnav> {
         ),
         GButton(
           icon: Icons.settings,
-          text: "settings",
+          text: "setting",
         ),
       ],
     );

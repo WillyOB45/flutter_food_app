@@ -48,7 +48,7 @@ class myCard extends StatelessWidget {
                       ),
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, "/foodescription");
+                          Navigator.popAndPushNamed(context, "/foodescription");
                         },
                         child: Text(
                           "Shop here",

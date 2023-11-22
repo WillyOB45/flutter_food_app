@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_food_app/src/components.dart/gnav.dart';
+import 'package:flutter_food_app/src/components/gnav.dart';
 import 'package:flutter_food_app/src/myCard.dart';
 // import 'package:flutter_food_app/src/pages/foodGrid.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -11,7 +11,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      bottomNavigationBar: myGnav(),
+      bottomNavigationBar: myGnavbar(),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
