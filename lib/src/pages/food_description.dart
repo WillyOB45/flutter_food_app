@@ -16,10 +16,7 @@ class foodescription extends StatelessWidget {
               children: [
                 Icon(Icons.arrow_back),
                 Spacer(),
-                Icon(
-                  Icons.favorite,
-                  color: Colors.deepOrange.shade300,
-                )
+                IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back))
               ],
             ),
 
