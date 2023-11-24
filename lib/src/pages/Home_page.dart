@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_food_app/src/components/gnav.dart';
-import 'package:flutter_food_app/src/myCard.dart';
+import 'package:flutter_food_app/src/components/myCard.dart';
 // import 'package:flutter_food_app/src/pages/foodGrid.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 

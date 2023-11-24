@@ -15,7 +15,7 @@ class _myGnavbarState extends State<myGnavbar> {
       backgroundColor: Colors.grey.shade300,
       activeColor: Colors.grey.shade300,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      tabBackgroundColor: Colors.deepOrange,
+      tabBackgroundColor: Colors.deepOrange.shade300,
       tabs: [
         GButton(
           icon: Icons.home,
