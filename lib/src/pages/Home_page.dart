@@ -23,7 +23,7 @@ class Homepage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    // greeting
+                    // greeting section
                     Row(
                       children: [
                         Text(
@@ -354,6 +354,7 @@ class Homepage extends StatelessWidget {
                 ),
                 Column(
                   children: [
+                    // voucher section
                     Container(
                       padding:
                           EdgeInsets.symmetric(horizontal: 40, vertical: 35),
@@ -365,6 +366,24 @@ class Homepage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10)),
                       child: Text(
                         "Earn free 10,000xp voucher",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: (20)),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 40, vertical: 35),
+                      width: 400,
+                      height: 100,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.rectangle,
+                          color: Colors.grey.shade300,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Text(
+                        "Earn free 20,000xp voucher",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: (20)),
                       ),

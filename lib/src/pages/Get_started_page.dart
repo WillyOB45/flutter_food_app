@@ -68,7 +68,7 @@ class Getstarted extends StatelessWidget {
               ),
               SizedBox(height: 70),
 
-              // get started
+              // get started button
               Center(
                 child: GestureDetector(
                   onTap: () {
